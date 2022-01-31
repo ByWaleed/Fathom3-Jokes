@@ -1,0 +1,48 @@
+<div class="flex items-center justify-center h-screen bg-gradient-to-br from-yellow-500 to-orange-400">
+    <div class="bg-white font-semibold text-center rounded-lg md:rounded-xl border shadow-lg p-3 mx-5 w-full md:p-7 md:w-1/2 lg:w-1/3">
+        <div>
+            <h1 class="font-serif text-3xl mb-3">Fathom3 Jokes</h1>
+            <p class="mb-5">
+                Type: <span id="category" class="capitalize font-bold"></span>
+            </p>
+        </div>
+
+        <div class="flex flex-col space-y-8 py-6 px-1 md:p-3">
+            <div class="flex items-end">
+                <div class="flex flex-col space-y-2 text-base mx-2 order-2 items-start">
+                    <div>
+                        <span id="setup"
+                            class="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-left text-gray-600">
+                            Setup
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-end justify-end">
+                <div class="flex flex-col space-y-2 text-base mx-2 order-1 items-end">
+                    <div>
+                        <span id="punchline"
+                            class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-orange-400 text-left text-white">
+                            Punchline
+                        </span>
+                        <button id="punchline_btn" onclick="showPunchline()"
+                            class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-orange-400 text-right text-white">
+                            Show Answer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="bg-orange-500 px-8 py-2 mt-8 mb-4 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide"
+            onclick="getJoke()">
+            Another Joke
+        </button>
+
+        <p class="my-3 text-xs italic">
+            Project build <a href="https://github.com/ByWaleed/Fathom3-Jokes" target="__blank" class="text-sky-500">ByWaleed</a>!
+        </p>
+    </div>
+</div>
